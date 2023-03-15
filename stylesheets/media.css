@@ -1,0 +1,85 @@
+@media (max-width: 600px) {
+    html {
+        font-size: calc(100vw / 600 * 10); }
+
+    .mainlogo{
+        margin-left: 3rem;
+        margin-top: 4rem;
+    }
+
+    .about-us{
+        max-width: 100vw;
+        max-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .prepare-levels{
+        max-width: 100vw;
+        max-height: 100vh;
+        overflow-x: hidden;
+    }
+
+
+    .toggle_btn{
+        position: absolute;
+        right: 5rem;
+        top: 1rem;
+    }
+
+    .header-preview-wrapper{
+        background-size: auto 100%;
+        background-position: -90rem;
+    }
+
+    header{
+        height: 10rem;
+    }
+
+    .preview-wrapper{
+        width: 50rem;
+        height: 50rem;
+        /*background-color: red;*/
+        /*transition: 1s;*/
+    }
+
+    .preview-wrapper__school-title{
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+
+    preview-wrapper__h3{
+    }
+
+    .preview-wrapper__button{
+        margin-top: 10rem;
+        width: 50rem;
+        height: 10rem;
+        border-radius: 5rem;
+        font-size: 5rem;
+    }
+
+
+    .about-us__title{
+        font-family: Montserrat-ExtraBold;
+        font-size: 12rem;
+    }
+    .about-as__description{
+        font-family: Montserrat-Regular;
+        font-weight: 1000;
+        width: 45rem;
+    }
+
+    .about-as__scores{
+        flex-direction: column;
+    }
+    .indecator__number{
+        text-align: right;
+        font-size: 11rem;
+    }
+    .indicatior__text{
+        font-family: Montserrat-Regular;
+        font-weight: 900;
+    }
+
+}
