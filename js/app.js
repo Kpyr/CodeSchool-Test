@@ -1,5 +1,16 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
+
+
+if (ScrollTrigger.isTouch !== 1){
+    document.addEventListener("DOMContentLoaded", function() {
+        new PanelSnap();
+    });
+}
+
+
+
+
 // var defaultOptions = {
 //     container: '.bd',
 //     panelSelector: '> section',
