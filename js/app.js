@@ -4,10 +4,10 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 
 
+const windowInnerWidth = document.documentElement.clientWidth
 
 
-
-if(windowInnerWidth > 600 && ScrollTrigger.isTouch !== 1){
+if(windowInnerWidth > 600 ){
     gsap.fromTo(".about-us__title",{opacity:0, y:200}, {
         scrollTrigger:".about-us__title",
         opacity:1, y:0,
@@ -65,7 +65,7 @@ if(windowInnerWidth > 600 && ScrollTrigger.isTouch !== 1){
 
 
 
-const windowInnerWidth = document.documentElement.clientWidth
+
 if(windowInnerWidth > 600){
     document.addEventListener("DOMContentLoaded", function() {
         new PanelSnap();
