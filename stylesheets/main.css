@@ -363,7 +363,7 @@ a {
 }
 
 .about-us__title {
-	opacity: 0;
+	/*opacity: 0;*/
 	font-family: Montserrat-ExtraBold;
 	margin: auto;
 	font-style: normal;
