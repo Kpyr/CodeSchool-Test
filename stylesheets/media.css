@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 600px) {
     html {
         font-size: calc(100vw / 600 * 10); }
@@ -71,6 +78,9 @@
     }
 
     .about-as__scores{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .indecator__number{
@@ -80,6 +90,18 @@
     .indicatior__text{
         font-family: Montserrat-Regular;
         font-weight: 900;
+    }
+
+    .prepare-levels__levels{
+        display: none;
+    }
+
+    .prepare-levels__title{
+        /*background-color: red;*/
+    }
+
+    .container_sld{
+        display: block;
     }
 
 }
