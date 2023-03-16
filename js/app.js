@@ -7,12 +7,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 
 
-
-
-
-// if (ScrollTrigger.isTouch !== 1) {
-
-
+if(windowInnerWidth > 600 && ScrollTrigger.isTouch !== 1){
     gsap.fromTo(".about-us__title",{opacity:0, y:200}, {
         scrollTrigger:".about-us__title",
         opacity:1, y:0,
@@ -36,24 +31,31 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
         })
     })
 
-gsap.fromTo(".prepare-levels__title",{opacity:0, y:200}, {
-    scrollTrigger:".prepare-levels__title",
-    opacity:1, y:0,
-    delay:0.25,
-});
+    gsap.fromTo(".prepare-levels__title",{opacity:0, y:200}, {
+        scrollTrigger:".prepare-levels__title",
+        opacity:1, y:0,
+        delay:0.25,
+    });
 
 
 
-let itemsLvl = gsap.utils.toArray('.level')
+    let itemsLvl = gsap.utils.toArray('.level')
 
-itemsLvl.forEach(item => {
-    gsap.fromTo(item, { opacity: 0, y: 200, scale:1 }, {
-        scrollTrigger:".prepare-levels__levels",
-        opacity:1, y:0, scale:1,
-        delay:0.15,
+    itemsLvl.forEach(item => {
+        gsap.fromTo(item, { opacity: 0, y: 200, scale:1 }, {
+            scrollTrigger:".prepare-levels__levels",
+            opacity:1, y:0, scale:1,
+            delay:0.15,
 
+        })
     })
-})
+}
+
+
+// if (ScrollTrigger.isTouch !== 1) {
+
+
+
 
 
 
