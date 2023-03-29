@@ -213,6 +213,8 @@
     .about-basic-level__basic-description{
         margin-left: 1rem;
     }
-
+    .about-basic-level__basic-description > h1{
+        display: none;
+    }
 
 }
