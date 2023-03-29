@@ -88,8 +88,8 @@ dd {
 /* Выставляем основные настройки по-умолчанию для body */
 body {
 	overflow-y: auto;
-	-ms-scroll-snap-type: y mandatory;
-	scroll-snap-type: y mandatory;
+	/*-ms-scroll-snap-type: y mandatory;*/
+	/*scroll-snap-type: y mandatory;*/
 	min-height: 100vh;
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
@@ -556,8 +556,13 @@ a {
 	-webkit-transition: 0.25s;
 	-o-transition: 0.25s;
 	transition: 0.25s;
+
+
+	user-select:none;
 }
 .level.active {
+	width: 19.75vw;
+	height: 19.75vw;
 	border: 0.25vw solid #162831;
 }
 .level.active > .level_icon{
@@ -603,7 +608,10 @@ a {
 	border-radius: 50%;
 	background: #FFFFFF;
 	padding: 10rem;
+
+	user-select: none;
 }
+
 
 .wrapper-diogram > svg{
 	margin-left:1rem;
@@ -628,6 +636,8 @@ a {
 }
 
 .about-basic-level__basic-description {
+	display: flex;
+	flex-direction: column;
 	height: 70vh;
 	width: 45vw;
 	display: -webkit-box;
@@ -636,10 +646,71 @@ a {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
-	flex-direction: column;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
-	background-color: red;
+		/*background-color: red;*/
+	align-items: start;
+	justify-content: center;
+}
+.about-basic-level__basic-description > h1 {
+	font-family: Montserrat-ExtraBold;
+	font-size: 15rem;
+	color: white;
+	text-align: center;
+}
+.about-basic-level__basic-description > a {
+	padding-bottom: 2rem;
+	font-family: Montserrat-Regular;
+	font-size: 2rem;
+	color: white;
+	text-align: left;
+}
+.more__btn {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: auto;
+	height: auto;
+	color: white;
+	border-radius: 15rem;
+	/*background-color: blueviolet;*/
+	cursor: pointer;
+	transition: 0.5s;
+
+	user-select: none;
+}
+.more__btn:hover {
+	border-radius: 15rem;
+	background-color: white;
+	color: var(--color-header);
+	transition: 0.5s;
+}
+.more__btn > a {
+	font-family: Montserrat-ExtraBold;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	font-size: 10rem;
+	text-align: left;
+	transition: 0.2s;
+}
+
+.small-txt{
+	font-family: Montserrat-ExtraBold;
+	font-size: 11rem;
+	color: white;
+	text-align: center;
+}
+
+.round{
+	width: 12vh;
+	height: 12vh;
+	border-radius: 50%;
+	background-color: #2167FF;
+}
+
+.sub-span{
+	color: #36D7D4;
 }
 
 .basic-description__title {
@@ -1031,4 +1102,33 @@ header{
 }
 .carousel .carousel-next {
 	right: 0;
+}
+
+.medium{
+	display: none;
+	background-color: #0050FF;
+}
+.hard{
+	display: none;
+	background-color: deeppink;
+}
+
+/*.mid_b{*/
+/*	transition: 2s;*/
+/*}*/
+.left_b > rect{
+	transition: 1.5s;
+}
+.mid_b > rect{
+	transition: 1.5s;
+}
+.right_b > rect{
+	transition: 1.5s;
+}
+
+.m-prepare-levels{
+	display: none;
+}
+.m-level-title{
+	display: none;
 }

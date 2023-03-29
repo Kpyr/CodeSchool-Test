@@ -104,4 +104,79 @@
         display: block;
     }
 
+
+    .prepare-levels__title{
+        font-size: 8rem;
+    }
+
+    .m-prepare-levels{
+
+        display: block;
+        margin-top: -20rem;
+        width: 45rem;
+        height: 60rem;
+        background-color: red;
+        color: white;
+        font-size: 5rem;
+        text-align: center;
+        font-family: Montserrat-Regular;
+    }
+
+
+
+    .about-basic-level{
+        flex-direction: column;
+    }
+
+    .about-basic-level__basic-description{
+        margin-top: -10rem;
+        width: 50rem;
+        height: 50rem;
+    }
+
+    .about-basic-level__basic-diogram{
+        margin-top: -10rem;
+        width: 50rem;
+        height: 50rem;
+        flex-direction: row;
+    }
+    .wrapper-diogram{
+        max-width: 100rem;
+        max-height: 100rem;
+        margin-top: -5rem;
+    }
+
+    .left_b{
+        width: 7rem;
+        height: 8rem;
+    }
+    .left_b > rect{
+        width: 40rem;
+        height: 50rem;
+    }
+    .mid_b{
+        width: 7rem;
+        height: 18rem;
+        /*display: none;*/
+    }
+    .mid_b > rect{
+        width: 40rem;
+        height: 50rem;
+    }
+    .right_b{
+        width: 7rem;
+        height: 28rem;
+        /*display: none;*/
+    }
+    .right_b > rect{
+        width: 40rem;
+        height: 90rem;
+    }
+    .m-level-title{
+        /*margin-top: 5rem;*/
+        font-family: Montserrat-Bold;
+        font-size: 8rem;
+        color: white;
+        display: block;
+    }
 }
