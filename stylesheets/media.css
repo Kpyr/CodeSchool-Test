@@ -179,4 +179,40 @@
         color: white;
         display: block;
     }
+
+    .about-basic-level__basic-description > h1 {
+        font-size: 10rem;
+    }
+
+    .about-basic-level__basic-description > a {
+        padding-bottom: 2rem;
+    }
+
+    .more__btn {
+        margin-top: 1rem;
+        border-radius: 15rem;
+        transition: 0.5s;
+        user-select: none;
+    }
+
+    .more__btn > a {
+        font-size: 5rem;
+    }
+
+    .small-txt{
+        font-family: Montserrat-ExtraBold;
+        font-size: 8rem;
+        color: white;
+        text-align: center;
+    }
+
+    .more__btn > svg {
+        width: 10rem;
+        height: 10rem;
+    }
+    .about-basic-level__basic-description{
+        margin-left: 1rem;
+    }
+
+
 }

@@ -155,6 +155,16 @@ var typingEffect = new Typed(".multiText",{
 var btn = document.querySelector('.preview-wrapper__button');
 
 
+if(windowInnerWidth <= 600 ){
+    var btn2 = document.querySelector('.button');
+    var hiddenElement2 = document.querySelector('.about-us')
+
+    btn2.addEventListener('click', handleButtonClick2);
+    function handleButtonClick2() {
+        hiddenElement2.scrollIntoView({block: "center", behavior: "smooth"});
+    }
+}
+
 
 btn.addEventListener('click', handleButtonClick);
 function handleButtonClick() {

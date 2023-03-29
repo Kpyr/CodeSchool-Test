@@ -29,13 +29,16 @@
 :root {
 	--color-header: #0050FF;
 	--color-text: #3d535f;
+	--color-h1:#162831;
 }
 
 body::-webkit-scrollbar {
 	display: none;
 }
 
-
+h1{
+	font-family: Montserrat-ExtraBold;
+}
 
 @font-face {
 	font-family: Montserrat-Regular;
@@ -1131,4 +1134,29 @@ header{
 }
 .m-level-title{
 	display: none;
+}
+
+.staff{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	background-color: white;
+}
+
+.staff > h1{
+	font-size: 5rem;
+	color: var(--color-h1);
+	text-align: center;
+	padding-bottom: 5rem;
+}
+.gal{
+	width: 50rem;
+	height: 50rem;
+	color: white;
+	font-size: 5rem;
+	text-align: center;
+	background-color: #2267FF;
 }
